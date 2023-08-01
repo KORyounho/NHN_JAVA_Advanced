@@ -1,0 +1,46 @@
+엘리어싱
+
+Heap영역에서 다 쓰고 나음것 정리는 Garbage Collecter가 함
+
+reference count
+
+reduce -> binaryOperation으로 선언되어져 있기에, binaryOperation 과 ProductApp은 슈퍼타입과 서브타입의 관계.
+
+ // 더블형 두개 받아서 double 한개 반환하는 함수 
+    // 단지 선언만 해놓고, 실제 구현 코드는 다른곳에서 사용 할거임. "인터페이스"로 활용할 예정이기 때문임.
+    // 이항연산을 진행하는 경우, 두개의 double형을 받아 한개를 반환하는 이 역할에 대한 명시를 해놓고, 실제 구현코드는 다른곳에서 짜는 것.
+    // 공통적인 코드가 있다고 한다면, 그 코드를 사용할 것임. 단지 명시가 용도로 쓰인다면 class로 선언하고, 명시 목적으로 활용한다면 interface로 사용됨
+    // 상속을 받은 클래스는 apply는 2개의 double형을 받아서 1개의 double형을 반환하는 역할을 함.
+
+    // lifetime was dicision (ex"static") command
+    // name was dicison myself
+    // range was dicision
+    // type was dicision ("int, float, ...") command
+    // why using static command?? -> memory space
+    // variable = tuple // (name, value, range == scope, Type(memory space), life
+    // time)
+    // when dicision the variable?? -> name can dicision the variable(abstraction)
+    // dynamic binding -> after compile, variable was dicision
+    // static binding -> during runtime, variable was dicision
+    // parameter is local variable but exactly not smae variable with local variable
+    // parameter don't need initialization but local variable need initialization
+
+    파일 열기: Ctrl + P
+   현재 열려있는 파일 닫기 : Ctrl + W
+   열려있는 모든 파일 닫기 : Ctrl + Shift + W
+   파일 저장: Ctrl + S
+   탭 이동: Ctrl + Tab
+   이전에 사용한 파일 열기: Ctrl + Q
+   단어 단위로 커서 이동: Ctrl + Left Arrow / Ctrl + Right Arrow
+   라인 전체 선택: Ctrl + L
+   라인 삭제: Ctrl + Shift + K
+   줄 복사: Ctrl + D
+      전체 줄 복사: Ctrl + Shift + L
+문장 단위 주석: Ctrl + /
+Command Palette를 오픈 : Ctrl + Shift + P
+전체 디렉토리에서 '파일명' 검색 : Ctrl + P
+최근에 열었던 파일들간 이동 : Ctrl + Shift + Tab
+열려있는 모든 파일 사이에서 이동 : Ctrl + Tab 
+현재 파일을 두 개의 세로 분할 패널로 나눠줌 : Ctrl + \
+열려있는 파일을 숫자키로 이동 : Ctrl + 1~9 
+Ctrl + Shift + [ or ] : 코드를 왼쪽( [ ) 혹은 오른쪽( ] )으로 들여쓰기 
