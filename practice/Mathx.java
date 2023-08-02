@@ -48,12 +48,13 @@ public class Mathx {
      */
     
      public static int factorial(int n){
+        int []answers = new int[n+1];
         if(n<0){
             throw new IllegalArgumentException("factorial: n<0");
         }
         if(n==0){
-            return 1;
+            return answers[0] = 1;
         }
-        return Math.multiplyExact(n,factorial(n-1));
+        return answers[n-1] = Math.multiplyExact(n,factorial(n-1));
      }
 }
