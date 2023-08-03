@@ -1,0 +1,114 @@
+엘리어싱
+
+Heap영역에서 다 쓰고 나음것 정리는 Garbage Collecter가 함
+
+reference count
+
+reduce -> binaryOperation으로 선언되어져 있기에, binaryOperation 과 ProductApp은 슈퍼타입과 서브타입의 관계.
+
+dry = do not repeat
+   8월 1일
+   // 더블형 두개 받아서 double 한개 반환하는 함수 
+    // 단지 선언만 해놓고, 실제 구현 코드는 다른곳에서 사용 할거임. "인터페이스"로 활용할 예정이기 때문임.
+    // 이항연산을 진행하는 경우, 두개의 double형을 받아 한개를 반환하는 이 역할에 대한 명시를 해놓고, 실제 구현코드는 다른곳에서 짜는 것.
+    // 공통적인 코드가 있다고 한다면, 그 코드를 사용할 것임. 단지 명시가 용도로 쓰인다면 class로 선언하고, 명시 목적으로 활용한다면 interface로 사용됨
+    // 상속을 받은 클래스는 apply는 2개의 double형을 받아서 1개의 double형을 반환하는 역할을 함.
+
+    // lifetime was dicision (ex"static") command
+    // name was dicison myself
+    // range was dicision
+    // type was dicision ("int, float, ...") command
+    // why using static command?? -> memory space
+    // variable = tuple // (name, value, range == scope, Type(memory space), life
+    // time)
+    // when dicision the variable?? -> name can dicision the variable(abstraction)
+    // dynamic binding -> after compile, variable was dicision
+    // static binding -> during runtime, variable was dicision
+    // parameter is local variable but exactly not smae variable with local variable
+    // parameter don't need initialization but local variable need initialization
+
+   파일 열기: Ctrl + P
+   현재 열려있는 파일 닫기 : Ctrl + W
+   열려있는 모든 파일 닫기 : Ctrl + Shift + W
+   파일 저장: Ctrl + S
+   탭 이동: Ctrl + Tab
+   이전에 사용한 파일 열기: Ctrl + Q
+   단어 단위로 커서 이동: Ctrl + Left Arrow / Ctrl + Right Arrow
+   라인 전체 선택: Ctrl + L
+   라인 삭제: Ctrl + Shift + K
+   줄 복사: Ctrl + D
+   전체 줄 복사: Ctrl + Shift + L
+   문장 단위 주석: Ctrl + /
+   Command Palette를 오픈 : Ctrl + Shift + P
+   전체 디렉토리에서 '파일명' 검색 : Ctrl + P
+   최근에 열었던 파일들간 이동 : Ctrl + Shift + Tab
+   열려있는 모든 파일 사이에서 이동 : Ctrl + Tab 
+
+   현재 파일을 두 개의 세로 분할 패널로 나눠줌 : Ctrl + \
+   열려있는 파일을 숫자키로 이 : Ctrl + 1~9 
+   Ctrl + Shift + [ or ] : 코드를 왼쪽( [ ) 혹은 오른쪽( ] )으로 들여쓰기 
+   안녕하세요오오오오오ter	커서가 위치한곳 아래 줄에 빈 행을 삽입
+   Ctrl + Shift + Enter	커서가 위치한 곳 윗 줄에 빈 행을 삽입
+   Alt + ↑/↓	커서가 위치한 행/ 선택한 행을 위 혹은 아래로 이동(여러 행 대응 가능)
+   Alt + Shift + ↑/↓	커서가 위한 행 / 선택한 행을 복사하며 이동(여러 행 대응가능)
+   Ctrl + C	선택 범위를 복사. 무것도 선택하지 않은 상태에서 사용하면 단순 복사.
+   Ctrl + X	선택 범위을 잘라내. 아무것도 선택하지 않은 상태에서 사용하면 단순 잘라내기.
+   Ctrl + BS	단어 부분 삭제 (커서 위의 왼쪽)
+   Ctrl + Del	단어 부분 삭제(커서 위치의 오른쪽)병신같은           
+   Shift + Alt + →/←	스마트 선택 범위의 확대 / 축소
+   Alt + Ctrl + ↑/↓	멀티 커서를 위/아래로 넓힌다
+   - 마우스 조작의 경우는 Alt + 클릭으로 커서 추가하면된다.
+   커맨드 멀티 커서 수정자의 대체 (Toggle Multi-Cursor Modifier, 메뉴바의 경우는 선택 > 멀티 커서를 Ctrl + 클릭으로 대체)를 실행하면  Ctrl + 클릭으로 변경할 수 있다.
+   Shift + ←/→	커서를 이동하면서 문자를 선택
+   Ctrl + Shift + ←/→	단어 단위로 커서를 이동하면서 선택
+   Ctrl + D	단어 선택. 원래는 복수 선택을 위한 단축키이지만 1회만 사용할 경우에는 실질적으로 단어 선택으로 사용할 수 있다.
+   Ctrl + L	행을 선택해여 커서를 아래 행으로 이동. 즉 연속해서 누르면 한 행씩 선택해간다.
+   Ctrl + K　Ctrl + B	커서 위치에 앵커를 셋팅한다.
+   Ctrl + K　Ctrl + K	앵커로부터 커서 위치까지 사이를 모두 선택
+   Esc	앵커를 삭제
+   Shift + Alt + →/←	스마트 선택 범위의 확대 / 축소
+   Alt + Ctrl + ↑/↓	멀티 커서를 위/아래로 넓힌다
+   - 마우스 조작의 경우는 Alt + 클릭으로 커서 추가하면된다.
+   커맨드 멀티 커서 수정자의 대체 (Toggle Multi-Cursor Modifier, 메뉴바의 경우는 선택 > 멀티 커서를 Ctrl + 클릭으로 대체)를 실행하면  Ctrl + 클릭으로 변경할 수 있다.
+   Ctrl + D	선택되어있는 문자열(또는 커서 주변의 단어)를 선택에 추가한다. 여러 번 추가하면 멀티 커서 상태가 된다.
+   Ctrl + Shift + L	선택되어 있는 문자열(또는 커서 주변의 단어)와 일치하는 문자열 모두를 선택한다. 여러 개를 선택한 경우에 멀티 커서 상태가 된다. Ctrl+D의 일괄 버전.
+   Symbol + F2 해당 단어 전부 변경
+   -----------------------   -----------------------   -----------------------   -----------------------   -----------------------
+   8월 2일
+   코딩의 순서 -> main에서 돌아가야 할 코드를 먼저 작성하고, 컴파일이 되게끔 MainMethod에서 유도한 이후, 실제 구현 코드를 작성
+   ***코딩을 하는 경우, 한번에 작성하는 것 보다 볼수 있는 정도의 단락을 작성한 이후, 원하는 결과가 나도록 계속 컴파일을 해야함.***
+   recursion -> 재귀함수 // 본인이 정의한 함수안에 정의한 함수를 호출하는 함수. (종료조건이 없으면 계속 실행됨 **종료조건이 필수**)
+   recursion의 점화식 중요함 !!
+   main함수는 jvm이 부르고 jvm은 운영체제가 부른다.(call back -> 남이 부른 함수)
+   BlackBoxTest -> 동작의 결과만 테스트하는 기법{
+      예외처리는 실행시키는 메서드에서 반환하지 않고, 다른 함수로 직접 만들어낸다. 예외처리는 Throwable의 인터페이스를 상속받은 클래스들
+      테스트코드를 잘 짜면 디버깅을 안해도 됨 (디버깅 = 메모리를 직접 확인하는 작업.)** TestCode** 작업 상당히 중요함.
+      return이 상당히 느린경우, PostCondition에서 return을 확인하기 어렵고, StackBufferOverFlow가 발생하기에, 이런경우도 생각해야함.
+      결국, 논리적으로 코드를 잘 짯다고 해도, 메모리가 상당히 차지한다면, 해결방안을 테스트케이스를 통해서 모색해야함.
+   }
+   1. 팩토리알 만들기
+   2. 테스트 작성 후
+   3. main
+
+   ++void함수의 검증에서는 local변수가 아니라 전역변수이기에 검증하기 어렵다.
+
+   factorial 실행시 StackBufferOverFlow가 먼저 일어나는 이유 -> 연산에 필요한 메모리가 연산 결과를 내기 이전에 수없이 많은 연산이 일어나서 stackbufferoverflow가 일어남.
+   그리고 recursion은 stack형식으로 연산을 진행하기에, stackbufferoverflow가 발생.
+   factorial(3)
+   -> factorial(3)
+   -> 3*factorial(2)
+   -> 3*2*factorial(1)
+   -> 3*2*1*factorial(0)
+   -> 3*2*1*1
+   -> 3*2*1
+   -> 3*2
+   -> 6
+   스택 형식 // 수많은 연산.  --> recursion 은  call stack이라고 얘기함.
+
+   recursion은 대체적으로 엄청난 메모리가 필요함. 그러면 왜 recursion을 사용하는가?
+   -> 자료 구조 자체가 recursive structure를 이루고 있다면, 어쩔수 없이 해야하지만, 자바의 경우는 안할 수도 있다.
+   -> 자바에서 사용하는 이유는 factorial이 아니라 factorial, QuickSort의 경우는 구현해내기 무지무지 어렵기에 recursion을 사용함.
+   -> recursion은 또 testcode를 사용하기에 너무 쉽다. while이나 for는 검증이 어려움.
+   recursive processer 과recursion은 다름. 구분은 알아보기.
+
+   계산복잡도는 가장 최악의 상황에서의 결과값을 비교한다. 하지만 가장 유효한 판단법은 평균상황에서의 결과값이 가장 중요하다.
