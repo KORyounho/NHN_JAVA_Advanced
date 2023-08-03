@@ -19,9 +19,9 @@ public class MathxTest {
         // MathxTest o = new MathxTest(); //private때문에 안됨 MathxTest에서만 생성이 가능하고, 다른
         // 클래스에서는 선언 자체 불가.
         //MathxTest.fibonacciTest();
-        MathxTest.factorialTest();
-        System.out.println(Mathx.factorial(5));
-        //System.out.println(Mathx.fibonacci(40));
+        //MathxTest.factorialTest();
+        //System.out.println(Mathx.factorial(5));
+        System.out.println(Mathx.fibonacci(40));
         
     }
 

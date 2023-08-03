@@ -1,6 +1,6 @@
 package practice;
 
-import static practice.Mathx.*; //static import
+import static practice.Mathx.fibonacci;
 
 public class FibonacciTest {
     

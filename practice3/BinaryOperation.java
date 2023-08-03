@@ -1,4 +1,4 @@
-package practice;
+package practice3;
 
 @FunctionalInterface
 public interface BinaryOperation {

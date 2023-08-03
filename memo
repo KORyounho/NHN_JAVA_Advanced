@@ -110,3 +110,5 @@ dry = do not repeat
    -> 자바에서 사용하는 이유는 factorial이 아니라 factorial, QuickSort의 경우는 구현해내기 무지무지 어렵기에 recursion을 사용함.
    -> recursion은 또 testcode를 사용하기에 너무 쉽다. while이나 for는 검증이 어려움.
    recursive processer 과recursion은 다름. 구분은 알아보기.
+
+   계산복잡도는 가장 최악의 상황에서의 결과값을 비교한다. 하지만 가장 유효한 판단법은 평균상황에서의 결과값이 가장 중요하다.
