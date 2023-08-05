@@ -1,7 +1,8 @@
 package practice3;
 
-@FunctionalInterface
-public interface BinaryOperation {
-    public double apply(double x, double y);
+import javax.lang.model.element.Element;
 
+@FunctionalInterface
+public interface BinaryOperation<T> extends Num  {
+    public <T> T apply(T x, T y);
 }

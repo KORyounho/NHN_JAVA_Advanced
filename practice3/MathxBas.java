@@ -1,22 +1,24 @@
 package practice3;
 
 import java.util.function.BinaryOperator;
+import java.util.function.Predicate;
 
 public class MathxBas {
-    static double reduce(BinaryOperation binaryOperation, double init, double... numbers) {
-        double result = init;
-        for (double number : numbers) {
-            result = binaryOperation.apply(result, number);
-        }
-        return result;
+
+    static <T> T reduce(BinaryOperator<T> binaryOperation, T init, T... numbers) {
+        return reduceIf(x->true, binaryOperation, init, numbers);
     }
 
-    public static double reduceIf(Predicate predicate, BinaryOperation binaryOperation, double init,
-                                  double... numbers) {
-        double result = init;
-        for (double number : numbers) { // Licskov's Substitution Principle = LSP
-            if (predicate.apply(number)) {
-                result = binaryOperation.apply(result, number);
+
+    public static <T> T reduceIf(
+            Predicate<T> predicate,
+            BinaryOperator<T> binaryOperator,
+            T init,
+            T... numbers) {
+        T result = init;
+        for (T number : numbers) { // Licskov's Substitution Principle = LSP
+            if (predicate.test(number)) {
+                result = binaryOperator.apply(result, number);
             }
         }
         return result;
@@ -31,12 +33,14 @@ public class MathxBas {
         return sum(range.getUpperBound()) - sum(range.getLowerBound() - 1);
     }
 
-    public static int gcd(int a, int b){
-        if(b == 0){
-            return a;
-        }else{
-            return gcd(b, a%b);
+    public static long gcd(long a, long b){
+        long n;
+        while(b!=0){
+            n = a%b;
+            a = b;
+            b = n;
         }
+        return a;
     }
 
     // static double sum(double... numbers) {

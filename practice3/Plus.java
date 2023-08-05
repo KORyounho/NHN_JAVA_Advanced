@@ -1,7 +1,12 @@
 package practice3;
 
-public class Plus implements BinaryOperation{
-    public double apply(double x, double y){
-        return x+y;
+public class Plus implements BinaryOperation<Fractional> {
+    public Fractional apply(Fractional x, Fractional y){
+        return x.add(y);
+    }
+
+    @Override
+    public <T> T apply(T x, T y) {
+        return x + y;
     }
 }
