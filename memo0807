@@ -1,0 +1,31 @@
+static scope
+
+ad hoc
+
+type parameter paramertic polymorphism
+
+subtyping polymorphism -> lsp **
+Object oriented (객체 지향의 원칙) solid (5가지 다형성을 지키는 원칙)
+
+Collection -> Heap영역에저장된 자료구조들(가져오고 버리고가 상당히 자유로운것) -> 일관성 유지(persistance)
+
+정규표현
+
+
+context free language
+context sensitive language
+regular language
+alen tuering language
+
+//kleene closure
+
+interpreter pattern // abstract syntax tree 추상 구문 트리
+->
+
+
+abstraction, interface 의 차이
+interface -> 필수적으로 조건에 만족해야함
+abstraction -> 확장된 코드가 무조건적으러 실행해야하는 부분에 더해지는 것(partial implementation)
+
+서브타이핑 -> A가 B의 서브타입 -> LSP에 의해 A타입이 선언이 되어도 B의 타입이 들어가도 상관 없다. -> 추상체는 구현체로 받아옴.
+서브클래싱
