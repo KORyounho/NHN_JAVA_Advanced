@@ -1,5 +1,6 @@
 package usecases;
 
+import practice3.BinaryOperation;
 import regular.*;
 
 public class RegularExpression {
@@ -11,6 +12,7 @@ public class RegularExpression {
         Expression ba_a0n = new Or( new Then( b, a ),
                 new Or( Expression.EPSILON, new Star( a ) )
         );
+
         System.out.println( a_ab );
         System.out.println( ba_a0n );
 

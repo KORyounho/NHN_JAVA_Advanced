@@ -22,6 +22,9 @@ alen tuering language
 interpreter pattern // abstract syntax tree 추상 구문 트리
 ->
 
+implement(interface)에서는 primitive type을 정의하는 함수를 사용하면 안됨, -> 단지 클래스만!
+
+
 
 abstraction, interface 의 차이
 interface -> 필수적으로 조건에 만족해야함

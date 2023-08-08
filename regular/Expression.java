@@ -1,6 +1,6 @@
 package regular;
 
-public interface Expression {
+public interface Expression { //subtyping
     public static final Epsilon EPSILON = Epsilon.value; // Epsilon은 상수. (공집합을 나타내기 위한 것)
 
     public default Expression or(Expression expression){
