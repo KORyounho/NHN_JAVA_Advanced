@@ -14,7 +14,8 @@ public class RegularExpression {
         );
 
         System.out.println( a_ab );
+        System.out.println( Literals.of(a_ab));
         System.out.println( ba_a0n );
-
+        System.out.println( Literals.of(ba_a0n) );
     }
 }

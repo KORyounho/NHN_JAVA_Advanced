@@ -1,0 +1,35 @@
+1. Matcher라는 Visitor SubType 개발
+    Expression e = "[a-z][a-zA-Z0-9]*
+    Matcher v = new Mather(e);
+    v.mater("45e") -> false
+
+
+2. Visitor<T>에서 Literals 방식으로 개발  ->  visitor에서 return타입으로 받아오기. (not void) -> T를 이용해서 해보자용
+public final class Literals implements Visitor<String>{}
+
+3. reduceIf의 var args/array대신에 Iterator<T>를 쓰도록 개발 -> decoupling
+4. reduceIf Iterator version 코드를 놓고, BinaryOperation subtype으로 풀 수 있는 수수께끼.
+
+약 2주동안의 총 정리.(학습 내용 정리)
+**계산 절차에서 같은 부분을 솎아 올려서 코드 쓰임새를 늘리는 설계 공부**
+** Procedural Abstraction **
+- Sum -> Product -> reduce(sum과 product 합치기), funtional interface/lambda expression으로 function(named closure)를 parameter로 넘기는 공부
+    - Ad hoc polymorphism - overloading
+    - parameteric polymorphism(generic method)
+
+- Fractional Data Type을 설계하는 공부, class/type -> type은 연산의 집합이다. -> type definition = a set of primitive operation의 집합.->
+- what/how의 경계..(abstraction barrier) -> how - implementation/representation -> class invariant ->constructer/selector(getter)/modifier(setter)/prredicate ->
+- equals, reference sementics vs value sementics -> parameter passing - call by value
+
+-fibonacci, factorial 같은 recursion (induction) precedure : Testing, Process Visualization
+    - recursive structure에 바탕을 둔 test-first code(preCondition, postCondition, baseCase, recursionCase)
+    - process 전개되는것을 보고 order of growth
+        - linear process, tree process
+        - procedure vs process
+- regular Expression class, interface, abstract class : Software Desgin
+    - subtyping polymorphism
+    - subtyping vs subclassing, LSP
+    - Interpreter, Visitor pattern들이 type을 보태거나 Operation을 보태거나 SoftWare를 늘리거나 고치는데 어떤 문제를 푸는데 유리한가.
+    - dynamic dispatch - RTTI, method overriding = single dispatch
+
+Programming in the Large

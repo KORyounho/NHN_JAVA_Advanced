@@ -8,4 +8,9 @@ abstraction -> subclassing  // abstraction은 extends된 클래스를 또 상속
  ** deligation은 하나의 클래스로만 정의를 해놔야 함.
 interface -> subtyping
 
-visitor pattern //
+visitor pattern // -> 파티션 타입에서 사용할 때 사용함.
+(하나의 집합을 정의할때, 부분집합들이 교집합을 가지지 않는것을 파티션이라고 함.)
+
+\
+
+

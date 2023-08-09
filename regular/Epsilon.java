@@ -8,7 +8,17 @@ public class Epsilon implements Expression{
         return "\u03B5";
     }
 
-    private Epsilon(){};
+    Epsilon(){};
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
+    public final String literals() {
+        return "";
+    }
 //    private Epsilon(){}
 //
 //    public static synchronized Epsilon getInstance(){  //한번만 불러오고 계속 그 값을 사용함. -> ******싱글톤 패턴********* synchronized 사용 안하면, 멀티쓰레드로 문제 발생

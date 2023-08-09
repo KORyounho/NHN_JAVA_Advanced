@@ -16,4 +16,14 @@ public final class Star implements Expression{
     public Expression getExpression() {
         return expression;
     }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
+    public String literals() {
+        return this.getExpression().literals();
+    }
 }

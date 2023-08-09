@@ -2,6 +2,7 @@ package regular;
 
 public interface Expression { //subtyping
     public static final Epsilon EPSILON = Epsilon.value; // Epsilon은 상수. (공집합을 나타내기 위한 것)
+    Expression epsilon = new Epsilon();
 
     public default Expression or(Expression expression){
         return new Or(this, expression);
@@ -14,6 +15,9 @@ public interface Expression { //subtyping
     public default Expression star(){
         return new Star(this);
     }
+
+    public void accept(Visitor visitor);
+    public String literals();
 
 //    public static Expression save(){
 //        return new Config();
